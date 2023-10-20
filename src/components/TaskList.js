@@ -5,7 +5,7 @@ import ReactPaginate from "react-paginate";
 import "./task.css";
 
 const TaskList = ({ tasks, onUpdateTask, onDeleteTask }) => {
-  const itemsPerPage = 1; // Number of items per page
+  const itemsPerPage = 10; // Number of items per page
   const [currentPage, setCurrentPage] = useState(0);
 
   const pageCount = Math.ceil(tasks.length / itemsPerPage);
